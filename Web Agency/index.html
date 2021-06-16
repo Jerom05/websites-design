@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Web Agency</title>
+        <link href="reset.css" rel="stylesheet" />
+        <link href="style.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Header Section  -->
+        <header>
+            <div class="content">
+                <a><span>W</span> Web Agency</a>
+                
+                <div class="menu" onclick="navToggle()">
+                    Menu
+                </div>
+                <nav class="nav nav-full">
+                    <ul>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li class="order-button">Order now</li>
+                    </ul>
+                </nav>
+            </div>
+            <nav id="nav-res-list" class="nav-res">
+                <ul>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li class="order-button">Order now</li>
+                </ul>
+            </nav>
+        </header>
+
+        <script>
+            function navToggle(){
+                let x = document.getElementById('nav-res-list')
+                if(x.className==='nav-res'){
+                    x.className +=" nav-responsive"
+                }else{
+                    x.className = "nav-res"
+                }
+            }
+        </script>
+
+    </body>
+</html>
